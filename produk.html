@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Roti Kacang</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>Roti Kacang Tebing Tinggi</h2>
+    <div>
+        <span id="jumlah"></span>
+        <button onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<h1 class="center">Pilih Varian</h1>
+
+<div class="cards">
+    <div class="card">
+        <h3>Kacang Hitam</h3>
+        <p>Rp 8.000</p>
+        <button onclick="tambah('Kacang Hitam')">Beli</button>
+    </div>
+
+    <div class="card">
+        <h3>Kacang Merah</h3>
+        <p>Rp 8.000</p>
+        <button onclick="tambah('Kacang Merah')">Beli</button>
+    </div>
+
+    <div class="card">
+        <h3>Kacang Hijau</h3>
+        <p>Rp 8.000</p>
+        <button onclick="tambah('Kacang Hijau')">Beli</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Keranjang</h2>
+    <ul id="cart"></ul>
+
+    <h3 id="total">Total: Rp 0</h3>
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

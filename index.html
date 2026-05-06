@@ -2,147 +2,22 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Usecase Roti kacang</title>
+<title>Roti Kacang Tebing Tinggi</title>
 
-<link rel="stylesheet" href="usecase.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<script>
+window.onload = function() {
+    let status = localStorage.getItem("login");
+
+    if (status === "true") {
+        window.location.href = "produk.html";
+    } else {
+        window.location.href = "login.html";
+    }
+}
+</script>
+
 </head>
-
 <body>
-
-<div class="container">
-
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <h2>ROTI KACANG</h2>
-
-        <P>
-            Mohammad Harees
-        <p> 253303611231</p>
-            
-        </P>
-
-        <button onclick="showStep(1)">01 Deskripsi Sistem</button>
-        <button onclick="showStep(2)">02 Aktor</button>
-        <button onclick="showStep(3)">03 Use Case</button>
-        <button onclick="showStep(4)">04 Relasi</button>
-        <button onclick="showStep(5)">05 Diagram</button>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="content">
-
-        <!-- STEP 1 -->
-        <div id="step1" class="step">
-    <div class="card">
-        <h1>Deskripsi Sistem</h1>
-
-        <p>
-            Sistem penjualan roti kacang berbasis web ini dirancang untuk memudahkan pelanggan dalam melakukan pembelian secara online. Melalui sistem ini, pengguna dapat melihat berbagai varian produk, menambahkan ke keranjang, serta melakukan proses checkout dan pembayaran secara sederhana.
-        </p>
-
-        <p>
-            Sistem juga dilengkapi dengan fitur perhitungan total harga secara otomatis, sehingga membantu pengguna dalam mengetahui jumlah pembayaran yang harus dilakukan. Selain itu, terdapat peran admin yang bertugas mengelola data produk agar tetap terorganisir.
-        </p>
-
-        <p>
-            Secara keseluruhan, sistem ini memberikan gambaran dasar alur transaksi e-commerce yang terstruktur dan mudah digunakan.
-        </p>
-
-    </div>
-</div>
-
-        <!-- STEP 2 -->
-        <div id="step2" class="step">
-            <div class="card">
-                <h1>Aktor</h1>
-
-                <ul>
-                    <li><b>Pelanggan</b> → melakukan login, memilih produk, dan melakukan pembelian</li>
-                    <li><b>Admin</b> → mengelola data produk yang tersedia</li>
-                </ul>
-
-                <p>
-                    Aktor dalam sistem ini dibagi menjadi dua peran utama, yaitu pelanggan sebagai pengguna utama sistem dan admin sebagai pengelola sistem.
-                </p>
-            </div>
-        </div>
-
-        <!-- STEP 3 -->
-      <div id="step3" class="step">
-    <div class="card">
-        <h1>Use Case</h1>
-
-        <div class="usecase-container">
-
-            <!-- USER -->
-            <div class="usecase-box">
-                <h3>👤 User (Pelanggan)</h3>
-                <ul>
-                    <li>Login ke sistem</li>
-                    <li>Melihat daftar produk</li>
-                    <li>Memilih varian roti</li>
-                    <li>Menambahkan ke keranjang</li>
-                    <li>Melihat total harga</li>
-                    <li>Melakukan checkout</li>
-                    <li>Melakukan pembayaran</li>
-                </ul>
-            </div>
-
-            <!-- ADMIN -->
-            <div class="usecase-box">
-                <h3>🛠️ Admin</h3>
-                <ul>
-                    <li>Login ke sistem</li>
-                    <li>Menambah produk</li>
-                    <li>Mengedit produk</li>
-                    <li>Menghapus produk</li>
-                    <li>Mengelola informasi produk</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <p>
-            Use case dibagi menjadi dua bagian utama, yaitu aktivitas user dalam proses pembelian dan aktivitas admin dalam mengelola produk.
-        </p>
-
-    </div>
-</div>
-
-        <!-- STEP 4 -->
-        <div id="step4" class="step">
-            <div class="card">
-                <h1>Relasi</h1>
-
-                <p>
-                    Pelanggan memiliki hubungan langsung dengan seluruh proses transaksi dalam sistem, mulai dari login hingga pembayaran. Setiap aktivitas yang dilakukan pelanggan merupakan bagian dari alur utama sistem.
-                </p>
-
-                <p>
-                    Admin memiliki relasi terhadap pengelolaan produk, yang secara tidak langsung mempengaruhi pengalaman pengguna dalam menggunakan sistem.
-                </p>
-            </div>
-        </div>
-
-        <!-- STEP 5 -->
-        <div id="step5" class="step">
-            <div class="card">
-                <h1>Diagram UML</h1>
-
-                <p>
-                    Berikut merupakan diagram use case yang dibuat menggunakan draw.io sebagai representasi visual dari sistem:
-                </p>
-
-                <!-- GANTI DENGAN FILE LU -->
-                <img src="harees.drawio.png" alt="diagram" class="diagram">
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-<script src="usecase.js"></script>
+<p style="text-align:center;margin-top:50px;">loading...</p>
 </body>
 </html>
